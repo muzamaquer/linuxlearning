@@ -1,0 +1,18 @@
+ls -l /etc
+ls -l /proc
+ls -l /home
+cat /etc/sysctl.conf
+cat /etc/nsswitch.conf
+cat > new.txt
+cat > new2.txt
+cat new.txt new2.txt > new3.txt
+cat new3.txt
+mv new3.txt new4.txt
+mkdir dircat
+mv new* dircat
+rm -r dircat
+ls -d .??* | wc -w
+cat  /etc/* 2> errors.txt
+wc -l errors.txt
+kill -9 8993
+ls /etc -lA | cut -d' ' -f1 | sort | uniq | wc -l
