@@ -1,0 +1,4 @@
+iptables -A INPUT -p tcp --dport 80 -j ACCEPT
+iptables -A INPUT -p tcp --dport 443 -j ACCEPT
+iptables -A INPUT -p tcp  -j DROP
+iptables -I INPUT 2 -p tcp --dport 22 -s 10.0.1.0/24 -j ACCEPT
